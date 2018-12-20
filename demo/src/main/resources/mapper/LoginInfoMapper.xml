@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeffy.demo.dao.LoginInfoDao">
+    <resultMap id="BaseResultMap" type="com.jeffy.demo.eneity.LoginInfo" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="account" property="account" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="CHAR" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="chances" property="chances" jdbcType="INTEGER" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id,account, password, status, create_time,update_time,chances
+    </sql>
+
+    <sql id="Base_Where_Clause">
+        <where>
+            <if test="likeAccount != null">
+                AND account LIKE concat('%',#{likeAccount},'%')
+            </if>
+            <if test="eqId != null">
+                AND id = #{eqId}
+            </if>
+            <if test="eqAccount!= null">
+                AND account = #{eqAccount}
+            </if>
+            <if test="eqStatus != null">
+                AND status = #{eqStatus}
+            </if>
+            <if test="geCreateTime != null">
+                AND DATE(create_time) <![CDATA[>=]]> #{geCreateTime}
+            </if>
+            <if test="leCreateTime != null">
+                AND DATE(create_time) <![CDATA[<=]]> #{leCreateTime}
+            </if>
+        </where>
+    </sql>
+
+    <select id="searchByMap" resultType="com.jeffy.demo.eneity.LoginInfo" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List" />
+        FROM login_info
+        <include refid="Base_Where_Clause"/>
+    </select>
+
+    <delete id="deleteByMap" parameterType="java.util.Map">
+        DELETE FROM login_info <include refid="Base_Where_Clause" />
+    </delete>
+
+    <insert id="insert" parameterType="com.jeffy.demo.eneity.LoginInfo">
+        INSERT INTO login_info(account,password,status,create_time,update_time,chances)
+        VALUES (#{account},#{password},#{status},#{createTime},#{updateTime},#{chances})
+    </insert>
+
+    <update id="update" parameterType="java.util.Map">
+        UPDATE login_info
+        <set>
+            <if test="account != null">
+                account=#{account},
+            </if>
+            <if test="password != null">
+                password=#{password},
+            </if>
+            <if test="status != null">
+                status=#{status},
+            </if>
+            <if test="updateTime != null">
+                updateTime=#{updateTime},
+            </if>
+            <if test="chances != null">
+                chances=#{chances},
+            </if>
+        </set>
+        <include refid="Base_Where_Clause"/>
+    </update>
+</mapper>

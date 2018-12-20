@@ -1,0 +1,856 @@
+[2018-12-16 09:57:18.446] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 7600 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 09:57:18.480] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 09:57:18.596] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6150c3ec: startup date [Sun Dec 16 09:57:18 CST 2018]; root of context hierarchy
+[2018-12-16 09:57:20.466] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 09:57:20.481] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 09:57:20.491] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 09:57:20.492] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 09:57:20.497] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 09:57:20.724] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 09:57:20.730] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 09:57:20.730] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2135 ms
+[2018-12-16 09:57:20.798] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 09:57:20.803] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 09:57:20.804] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 09:57:20.804] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 09:57:20.804] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 09:57:21.498] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 09:57:21.678] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6150c3ec: startup date [Sun Dec 16 09:57:18 CST 2018]; root of context hierarchy
+[2018-12-16 09:57:21.733] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.734] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.735] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.735] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.735] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 09:57:21.736] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.737] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 09:57:21.737] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 09:57:21.738] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 09:57:21.738] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.738] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 09:57:21.739] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 09:57:21.744] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 09:57:21.745] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 09:57:21.773] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 09:57:21.773] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 09:57:21.818] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 09:57:22.048] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 09:57:22.050] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 09:57:22.056] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 09:57:22.068] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 09:57:22.078] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 09:57:22.098] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 09:57:22.102] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.676 seconds (JVM running for 6.35)
+[2018-12-16 09:57:27.861] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 09:57:27.862] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 09:57:27.908] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+[2018-12-16 09:57:31.561] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 11:36:23.696] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6456 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 11:36:23.700] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 11:36:23.766] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:36:23 CST 2018]; root of context hierarchy
+[2018-12-16 11:36:25.749] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 11:36:25.772] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:36:25.791] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 11:36:25.792] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 11:36:25.809] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 11:36:26.235] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 11:36:26.244] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 11:36:26.244] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2478 ms
+[2018-12-16 11:36:26.336] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 11:36:26.343] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 11:36:26.344] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 11:36:26.344] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 11:36:26.344] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 11:36:27.040] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:36:27.600] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:36:23 CST 2018]; root of context hierarchy
+[2018-12-16 11:36:27.673] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.674] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.675] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.675] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.676] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 11:36:27.676] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.677] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 11:36:27.678] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 11:36:27.678] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 11:36:27.678] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.679] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 11:36:27.679] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 11:36:27.684] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:36:27.685] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 11:36:27.721] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:36:27.722] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:36:27.776] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 11:36:28.010] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 11:36:28.012] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 11:36:28.018] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 11:36:28.031] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:36:28.040] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 11:36:28.061] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 11:36:28.065] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.775 seconds (JVM running for 6.096)
+[2018-12-16 11:36:38.730] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 11:36:38.730] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 11:36:38.750] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[2018-12-16 11:37:04.949] [http-nio-8080-exec-4] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 11:40:30.203] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 1564 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 11:40:30.208] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 11:40:30.287] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:40:30 CST 2018]; root of context hierarchy
+[2018-12-16 11:40:32.388] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 11:40:32.413] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:40:32.429] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 11:40:32.429] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 11:40:32.440] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 11:40:32.765] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 11:40:32.770] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 11:40:32.770] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2484 ms
+[2018-12-16 11:40:32.834] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 11:40:32.840] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 11:40:32.840] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 11:40:32.840] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 11:40:32.840] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 11:40:33.450] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:40:33.666] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:40:30 CST 2018]; root of context hierarchy
+[2018-12-16 11:40:33.721] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.722] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.722] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.723] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.723] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 11:40:33.723] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.724] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 11:40:33.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 11:40:33.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 11:40:33.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.726] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 11:40:33.726] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 11:40:33.731] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:40:33.732] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 11:40:33.758] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:40:33.758] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:40:33.803] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 11:40:34.041] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 11:40:34.042] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 11:40:34.048] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 11:40:34.061] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:40:34.070] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 11:40:34.090] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 11:40:34.094] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.362 seconds (JVM running for 5.684)
+[2018-12-16 11:40:40.959] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 11:40:40.959] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 11:40:40.986] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+[2018-12-16 11:40:59.419] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 11:42:16.310] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6232 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 11:42:16.315] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 11:42:16.431] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:42:16 CST 2018]; root of context hierarchy
+[2018-12-16 11:42:18.397] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 11:42:18.422] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:42:18.441] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 11:42:18.442] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 11:42:18.462] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 11:42:18.996] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 11:42:19.005] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 11:42:19.005] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2574 ms
+[2018-12-16 11:42:19.091] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 11:42:19.097] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 11:42:19.098] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 11:42:19.098] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 11:42:19.098] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 11:42:19.984] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:42:20.237] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:42:16 CST 2018]; root of context hierarchy
+[2018-12-16 11:42:20.351] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.354] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.355] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.356] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 11:42:20.356] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.357] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.361] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 11:42:20.362] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 11:42:20.363] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 11:42:20.364] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.364] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 11:42:20.365] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 11:42:20.374] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:42:20.375] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 11:42:20.419] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:42:20.419] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:42:20.483] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 11:42:20.756] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 11:42:20.758] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 11:42:20.768] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 11:42:20.786] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:42:20.799] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 11:42:20.820] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 11:42:20.824] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.977 seconds (JVM running for 6.251)
+[2018-12-16 11:42:27.197] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 11:42:27.197] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 11:42:27.215] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+[2018-12-16 11:42:47.168] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 11:42:48.131] [http-nio-8080-exec-3] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[2018-12-16 11:42:48.184] [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'password' at row 1
+### The error may involve com.jeffy.demo.dao.LoginInfoDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO login_info(account,password,status,updateTime,chances)         VALUES (?,?,?,?,?)
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'password' at row 1
+; ]; Data truncation: Data too long for column 'password' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'password' at row 1] with root cause
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'password' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy77.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy61.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy67.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:197)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy68.insert(Unknown Source)
+	at com.jeffy.demo.service.impl.LoginInfoServiceImpl.register(LoginInfoServiceImpl.java:77)
+	at com.jeffy.demo.controller.LoginController.registerIn(LoginController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-16 11:44:57.562] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 8184 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 11:44:57.576] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 11:44:57.648] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:44:57 CST 2018]; root of context hierarchy
+[2018-12-16 11:44:59.844] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 11:44:59.943] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:44:59.958] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 11:44:59.959] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 11:44:59.964] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 11:45:00.406] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 11:45:00.412] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 11:45:00.412] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2764 ms
+[2018-12-16 11:45:00.492] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 11:45:00.499] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 11:45:00.500] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 11:45:00.500] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 11:45:00.501] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 11:45:01.305] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:45:01.531] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:44:57 CST 2018]; root of context hierarchy
+[2018-12-16 11:45:01.589] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.590] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.590] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.591] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.591] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 11:45:01.591] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.593] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 11:45:01.593] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 11:45:01.593] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 11:45:01.594] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.594] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 11:45:01.594] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 11:45:01.599] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:45:01.600] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 11:45:01.625] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:45:01.625] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:45:01.670] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 11:45:01.912] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 11:45:01.913] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 11:45:01.919] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 11:45:01.934] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:45:01.944] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 11:45:01.967] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 11:45:01.971] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.947 seconds (JVM running for 6.385)
+[2018-12-16 11:45:07.909] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 11:45:07.909] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 11:45:07.929] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[2018-12-16 11:45:24.756] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 11:47:44.207] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 7952 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 11:47:44.211] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 11:47:44.316] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:47:44 CST 2018]; root of context hierarchy
+[2018-12-16 11:47:46.370] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 11:47:46.393] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:47:46.408] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 11:47:46.409] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 11:47:46.414] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 11:47:46.736] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 11:47:46.745] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 11:47:46.747] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2432 ms
+[2018-12-16 11:47:46.834] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 11:47:46.841] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 11:47:46.841] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 11:47:46.842] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 11:47:46.842] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 11:47:48.036] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:47:48.285] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 11:47:44 CST 2018]; root of context hierarchy
+[2018-12-16 11:47:48.346] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.347] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.348] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.348] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.348] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 11:47:48.349] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.350] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 11:47:48.351] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 11:47:48.351] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 11:47:48.352] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.352] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 11:47:48.352] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 11:47:48.357] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 11:47:48.358] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 11:47:48.388] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:47:48.388] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 11:47:48.438] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 11:47:48.724] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 11:47:48.726] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 11:47:48.733] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 11:47:48.748] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 11:47:48.760] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 11:47:48.784] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 11:47:48.788] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 5.324 seconds (JVM running for 6.581)
+[2018-12-16 11:47:57.079] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 11:47:57.079] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 11:47:57.105] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+[2018-12-16 11:48:19.108] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 12:06:39.819] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6952 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 12:06:39.826] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 12:06:39.913] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 12:06:39 CST 2018]; root of context hierarchy
+[2018-12-16 12:06:42.104] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 12:06:42.128] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 12:06:42.146] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 12:06:42.146] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 12:06:42.153] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 12:06:42.567] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 12:06:42.574] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 12:06:42.574] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2662 ms
+[2018-12-16 12:06:42.654] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 12:06:42.660] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 12:06:42.660] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 12:06:42.660] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 12:06:42.660] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 12:06:43.437] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:06:43.666] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 12:06:39 CST 2018]; root of context hierarchy
+[2018-12-16 12:06:43.723] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.724] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 12:06:43.726] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.727] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 12:06:43.727] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 12:06:43.727] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 12:06:43.728] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.728] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 12:06:43.728] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 12:06:43.733] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:06:43.734] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 12:06:43.762] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:06:43.762] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:06:43.809] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 12:06:44.050] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 12:06:44.052] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 12:06:44.057] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 12:06:44.071] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 12:06:44.079] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 12:06:44.100] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 12:06:44.104] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.932 seconds (JVM running for 6.67)
+[2018-12-16 12:06:51.366] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 12:06:51.366] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 12:06:51.392] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+[2018-12-16 12:07:21.892] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 12:12:30.894] [http-nio-8080-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping found for HTTP request with URI [/user/index] in DispatcherServlet with name 'dispatcherServlet'
+[2018-12-16 12:12:30.906] [http-nio-8080-exec-2] ERROR o.s.b.a.w.s.e.ErrorMvcAutoConfiguration$SpelView - Cannot render error page for request [/user/index] and exception [No message available] as the response has already been committed. As a result, the response may have the wrong status code.
+[2018-12-16 12:19:58.596] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6700 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 12:19:58.602] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 12:19:58.737] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 12:19:58 CST 2018]; root of context hierarchy
+[2018-12-16 12:20:01.354] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 12:20:01.372] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 12:20:01.386] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 12:20:01.387] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 12:20:01.391] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 12:20:01.741] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 12:20:01.747] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 12:20:01.747] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3010 ms
+[2018-12-16 12:20:01.824] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 12:20:01.830] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 12:20:01.831] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 12:20:01.831] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 12:20:01.832] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 12:20:02.521] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:20:02.721] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 12:19:58 CST 2018]; root of context hierarchy
+[2018-12-16 12:20:02.776] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.778] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.779] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.779] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.780] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 12:20:02.781] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.783] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 12:20:02.784] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 12:20:02.784] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 12:20:02.785] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.785] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 12:20:02.785] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 12:20:02.790] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 12:20:02.791] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 12:20:02.822] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:20:02.822] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 12:20:02.877] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 12:20:03.152] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 12:20:03.154] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 12:20:03.160] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 12:20:03.175] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 12:20:03.186] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 12:20:03.209] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 12:20:03.214] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 5.357 seconds (JVM running for 7.074)
+[2018-12-16 12:20:06.893] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 12:20:06.893] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 12:20:06.916] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+[2018-12-16 12:20:22.353] [http-nio-8080-exec-8] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 16:17:25.573] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 3336 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 16:17:25.590] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 16:17:25.726] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 16:17:25 CST 2018]; root of context hierarchy
+[2018-12-16 16:17:28.147] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 16:17:28.171] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:17:28.188] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 16:17:28.188] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 16:17:28.195] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 16:17:28.502] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 16:17:28.508] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 16:17:28.508] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2782 ms
+[2018-12-16 16:17:28.590] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 16:17:28.597] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 16:17:28.598] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 16:17:28.598] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 16:17:28.598] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 16:17:29.419] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:17:29.659] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 16:17:25 CST 2018]; root of context hierarchy
+[2018-12-16 16:17:29.725] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.726] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.727] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.728] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.728] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 16:17:29.729] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.731] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 16:17:29.731] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 16:17:29.732] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 16:17:29.732] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.732] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 16:17:29.733] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 16:17:29.739] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:17:29.740] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 16:17:29.774] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:17:29.775] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:17:29.829] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 16:17:30.121] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 16:17:30.123] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 16:17:30.131] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 16:17:30.147] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:17:30.159] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 16:17:30.182] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 16:17:30.187] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 5.411 seconds (JVM running for 6.99)
+[2018-12-16 16:17:58.772] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 16:17:58.772] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 16:17:58.798] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+[2018-12-16 16:18:01.411] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 16:21:10.037] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6536 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 16:21:10.043] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 16:21:10.107] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 16:21:10 CST 2018]; root of context hierarchy
+[2018-12-16 16:21:12.565] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 16:21:12.587] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:21:12.603] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 16:21:12.603] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 16:21:12.609] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 16:21:12.980] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 16:21:12.988] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 16:21:12.989] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2882 ms
+[2018-12-16 16:21:13.075] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 16:21:13.081] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 16:21:13.082] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 16:21:13.082] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 16:21:13.082] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 16:21:13.871] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:21:14.103] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 16:21:10 CST 2018]; root of context hierarchy
+[2018-12-16 16:21:14.188] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.189] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.190] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.191] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.191] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 16:21:14.192] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.193] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 16:21:14.194] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 16:21:14.194] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 16:21:14.194] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.195] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 16:21:14.195] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 16:21:14.201] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:21:14.202] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 16:21:14.243] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:21:14.244] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:21:14.301] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 16:21:14.645] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 16:21:14.647] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 16:21:14.656] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 16:21:14.674] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:21:14.687] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 16:21:14.724] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 16:21:14.732] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 5.258 seconds (JVM running for 7.106)
+[2018-12-16 16:21:23.322] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 16:21:23.323] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 16:21:23.360] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+[2018-12-16 16:21:25.917] [http-nio-8080-exec-4] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 16:48:53.032] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 7992 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 16:48:53.039] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 16:48:53.221] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 16:48:53 CST 2018]; root of context hierarchy
+[2018-12-16 16:48:55.939] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 16:48:55.960] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:48:55.975] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 16:48:55.976] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 16:48:55.981] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 16:48:56.293] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 16:48:56.298] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 16:48:56.298] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3077 ms
+[2018-12-16 16:48:56.373] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 16:48:56.379] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 16:48:56.380] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 16:48:56.380] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 16:48:56.380] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 16:48:57.138] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:48:57.381] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 16:48:53 CST 2018]; root of context hierarchy
+[2018-12-16 16:48:57.446] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.447] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.448] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.449] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.449] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 16:48:57.450] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.451] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 16:48:57.452] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 16:48:57.452] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 16:48:57.453] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.453] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 16:48:57.454] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 16:48:57.460] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 16:48:57.461] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 16:48:57.498] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:48:57.498] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 16:48:57.557] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 16:48:57.855] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 16:48:57.857] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 16:48:57.866] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 16:48:57.883] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 16:48:57.896] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 16:48:57.920] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 16:48:57.925] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 5.57 seconds (JVM running for 7.314)
+[2018-12-16 16:49:08.382] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 16:49:08.382] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 16:49:08.405] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+[2018-12-16 16:49:10.962] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 17:25:11.543] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6836 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 17:25:11.549] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 17:25:11.631] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 17:25:11 CST 2018]; root of context hierarchy
+[2018-12-16 17:25:13.711] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 17:25:13.728] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 17:25:13.741] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 17:25:13.742] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 17:25:13.746] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 17:25:13.981] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 17:25:13.988] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 17:25:13.989] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2358 ms
+[2018-12-16 17:25:14.052] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 17:25:14.057] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 17:25:14.057] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 17:25:14.057] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 17:25:14.057] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 17:25:14.687] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 17:25:14.870] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 17:25:11 CST 2018]; root of context hierarchy
+[2018-12-16 17:25:14.937] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.939] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.940] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.941] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.941] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 17:25:14.941] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.942] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 17:25:14.943] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 17:25:14.943] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 17:25:14.944] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.944] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 17:25:14.944] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 17:25:14.949] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 17:25:14.950] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 17:25:14.983] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 17:25:14.983] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 17:25:15.032] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 17:25:15.277] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 17:25:15.278] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 17:25:15.284] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 17:25:15.298] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 17:25:15.307] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 17:25:15.327] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 17:25:15.331] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.633 seconds (JVM running for 5.921)
+[2018-12-16 17:25:21.753] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 17:25:21.753] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 17:25:21.777] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+[2018-12-16 17:25:24.212] [http-nio-8080-exec-3] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited
+[2018-12-16 17:45:46.939] [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: Index: 0, Size: 0] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.jeffy.demo.controller.BlogController.artical(BlogController.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-16 23:34:29.270] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 8008 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 23:34:29.279] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 23:34:29.343] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 23:34:29 CST 2018]; root of context hierarchy
+[2018-12-16 23:34:32.788] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 23:34:32.815] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:34:32.832] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 23:34:32.839] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 23:34:32.850] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 23:34:33.434] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 23:34:33.443] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 23:34:33.443] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4100 ms
+[2018-12-16 23:34:33.605] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 23:34:33.627] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 23:34:33.627] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 23:34:33.627] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 23:34:33.628] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 23:34:34.864] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:34:35.231] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e6f74c: startup date [Sun Dec 16 23:34:29 CST 2018]; root of context hierarchy
+[2018-12-16 23:34:35.360] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.362] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.363] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.363] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.364] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 23:34:35.364] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.366] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 23:34:35.367] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 23:34:35.368] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 23:34:35.368] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.369] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 23:34:35.369] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 23:34:35.376] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:34:35.378] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 23:34:35.425] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:34:35.425] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:34:35.517] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 23:34:36.010] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 23:34:36.013] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 23:34:36.023] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 23:34:36.116] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:34:36.162] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 23:34:36.245] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 23:34:36.253] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 8.429 seconds (JVM running for 10.629)
+[2018-12-16 23:34:40.808] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 23:34:40.809] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 23:34:40.840] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[2018-12-16 23:40:11.870] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 7724 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 23:40:11.877] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 23:40:12.331] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a78afa0: startup date [Sun Dec 16 23:40:12 CST 2018]; root of context hierarchy
+[2018-12-16 23:40:13.885] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 23:40:13.898] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:40:13.909] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 23:40:13.909] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 23:40:13.913] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 23:40:14.169] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 23:40:14.174] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 23:40:14.174] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1843 ms
+[2018-12-16 23:40:14.235] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 23:40:14.241] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 23:40:14.242] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 23:40:14.242] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 23:40:14.242] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 23:40:14.848] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:40:15.050] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a78afa0: startup date [Sun Dec 16 23:40:12 CST 2018]; root of context hierarchy
+[2018-12-16 23:40:15.108] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.109] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.109] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.109] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.110] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 23:40:15.110] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.111] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 23:40:15.111] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 23:40:15.112] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 23:40:15.112] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.112] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 23:40:15.112] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 23:40:15.117] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:40:15.118] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 23:40:15.147] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:40:15.147] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:40:15.194] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 23:40:15.441] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 23:40:15.442] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 23:40:15.448] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 23:40:15.462] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:40:15.472] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 23:40:15.495] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 23:40:15.499] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.769 seconds (JVM running for 6.165)
+[2018-12-16 23:40:55.682] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 23:40:55.682] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 23:40:55.702] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+[2018-12-16 23:41:55.474] [main] INFO  com.jeffy.demo.DemoApplication - Starting DemoApplication on SLAHHVIMMGIW3DX with PID 6192 (D:\Jeffy\workplace\demo\target\classes started by Administrator in D:\Jeffy\workplace\demo)
+[2018-12-16 23:41:55.489] [main] INFO  com.jeffy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+[2018-12-16 23:41:55.563] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 23:41:55 CST 2018]; root of context hierarchy
+[2018-12-16 23:41:57.681] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2018-12-16 23:41:57.696] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:41:57.707] [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2018-12-16 23:41:57.708] [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+[2018-12-16 23:41:57.712] [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\software\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\software\Java\jdk1.8\bin;D:\software\Java\jdk1.8\jre\bin;D:\software\Python\Scripts\;D:\software\Python\;D:\software\PyCharmCommunityEdition\bin;;.]
+[2018-12-16 23:41:57.968] [localhost-startStop-1] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[2018-12-16 23:41:57.974] [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2018-12-16 23:41:57.974] [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2411 ms
+[2018-12-16 23:41:58.036] [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[2018-12-16 23:41:58.042] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[2018-12-16 23:41:58.042] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[2018-12-16 23:41:58.043] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[2018-12-16 23:41:58.043] [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[2018-12-16 23:41:58.688] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:41:58.918] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@44c03695: startup date [Sun Dec 16 23:41:55 CST 2018]; root of context hierarchy
+[2018-12-16 23:41:58.970] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/update],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.update(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.971] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/save],methods=[POST]}" onto public java.lang.String com.jeffy.demo.controller.BlogController.save(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.971] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/test]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.test(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.972] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/articalList]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.jeffy.demo.controller.BlogController.articalList(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.972] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/home]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.BlogController.homeView()
+[2018-12-16 23:41:58.972] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/blog/artical]}" onto public com.jeffy.demo.eneity.Artical com.jeffy.demo.controller.BlogController.artical(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.973] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginView(javax.servlet.http.HttpSession)
+[2018-12-16 23:41:58.974] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.registerView()
+[2018-12-16 23:41:58.974] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.indexView()
+[2018-12-16 23:41:58.974] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/registerIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.registerIn(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.975] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginIn]}" onto public java.lang.String com.jeffy.demo.controller.LoginController.loginIn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+[2018-12-16 23:41:58.975] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login/loginOut]}" onto public org.springframework.web.servlet.ModelAndView com.jeffy.demo.controller.LoginController.loginOut(javax.servlet.http.HttpSession)
+[2018-12-16 23:41:58.979] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[2018-12-16 23:41:58.980] [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[2018-12-16 23:41:59.009] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:41:59.009] [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[2018-12-16 23:41:59.069] [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+[2018-12-16 23:41:59.391] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[2018-12-16 23:41:59.392] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+[2018-12-16 23:41:59.398] [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+[2018-12-16 23:41:59.415] [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2018-12-16 23:41:59.425] [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[2018-12-16 23:41:59.449] [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2018-12-16 23:41:59.454] [main] INFO  com.jeffy.demo.DemoApplication - Started DemoApplication in 4.872 seconds (JVM running for 6.676)
+[2018-12-16 23:42:31.627] [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[2018-12-16 23:42:31.627] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[2018-12-16 23:42:31.654] [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+[2018-12-16 23:42:38.590] [http-nio-8080-exec-8] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited

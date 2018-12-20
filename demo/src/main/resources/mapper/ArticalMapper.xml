@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jeffy.demo.dao.ArticalDao">
+    <resultMap id="BaseResultMap" type="com.jeffy.demo.eneity.Artical" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="title" property="title" jdbcType="VARCHAR" />
+        <result column="content" property="content" jdbcType="CLOB" />
+        <result column="attachment_path" property="attachmentPath" jdbcType="VARCHAR" />
+        <result column="type_id" property="typeId" jdbcType="INTEGER" />
+        <result column="author_id" property="authorId" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="like_num" property="likeNum" jdbcType="INTEGER" />
+        <result column="hate_num" property="hateNum" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="label" property="label" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Where_Clause">
+        <where>
+            <if test="likeSearch != null">
+                AND (title like CONCAT('%',#{likeSearch},'%') OR content like CONCAT('%',#{likeSearch},'%') OR label like CONCAT('%',#{likeSearch},'%'))
+            </if>
+            <if test="eqId != null">
+                AND id = #{eqId}
+            </if>
+            <if test="eqTypeId != null">
+                AND type_id = #{eqTypeId}
+            </if>
+            <if test="eqLabel != null">
+                AND label = #{eqLabel}
+            </if>
+            <if test="eqAuthorId != null">
+                AND author_id = #{eqAuthorId}
+            </if>
+            <if test="eqStatus != null">
+                AND status = #{eqStatus}
+            </if>
+            <if test="eqId != null">
+                AND id = #{eqId}
+            </if>
+            <if test="geCreateTime != null">
+                AND DATE(create_time) <![CDATA[>=]]> #{geCreateTime}
+            </if>
+            <if test="leCreateTime != null">
+                AND DATE(create_time) <![CDATA[<=]]> #{leCreateTime}
+            </if>
+            <if test="geUpdateTime != null">
+                AND DATE(update_time) <![CDATA[>=]]> #{geUpdateTime}
+            </if>
+            <if test="leUpdateTime != null">
+                AND DATE(update_time) <![CDATA[<=]]> #{leUpdateTime}
+            </if>
+        </where>
+    </sql>
+
+    <sql id="Base_Column_List" >
+        id,title, content, attachment_path, type_id, author_id,like_num, hate_num, create_time,update_time,
+        status,label,(select name from artical_type where id=type_id) as typeName
+    </sql>
+
+    <select id="selectByMap" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List" />
+        FROM artical
+        <include refid="Base_Where_Clause"/>
+        <if test="orderByTime != null">
+            order by update_time desc
+        </if>
+    </select>
+
+    <insert id="insertData" parameterType="com.jeffy.demo.eneity.Artical">
+        INSERT INTO artical(title,<if test="content != null">content,</if>
+        <if test="label != null">label,</if>
+        <if test="attachmentPath != null">attachment_path,</if>
+        <if test="typeId != null">type_id,</if>
+        <if test="authorId != null">author_id,</if>
+        <if test="createTime != null">create_time,</if>
+        <if test="updateTime != null">update_time,</if>
+        <if test="likeNum != null">like_num,</if>
+        <if test="hateNum != null">hate_num,</if>
+        status)
+        VALUES (#{title},<if test="content != null">#{content},</if>
+        <if test="label != null">#{label},</if>
+        <if test="attachmentPath != null">#{attachmentPath},</if>
+        <if test="typeId != null">#{typeId},</if>
+        <if test="authorId != null">#{authorId},</if>
+        <if test="createTime != null">#{createTime},</if>
+        <if test="updateTime != null">#{updateTime},</if>
+        <if test="likeNum != null">#{likeNum},</if>
+        <if test="hateNum != null">#{hateNum},</if>
+        #{status})
+    </insert>
+
+    <update id="updateByMap" parameterType="java.util.Map">
+        UPDATE artical
+        <set>
+            <if test="title != null">
+                title=#{title},
+            </if>
+            <if test="content != null">
+                content=#{content},
+            </if>
+            <if test="label != null">
+                label=#{label},
+            </if>
+            <if test="attachmentPath != null">
+                attachment_path=#{attachmentPath},
+            </if>
+            <if test="typeId != null">
+                type_id=#{typeId},
+            </if>
+            <if test="authorId != null">
+                author_id=#{authorId},
+            </if>
+            <if test="createTime != null">
+                create_time=#{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time=#{updateTime},
+            </if>
+            <if test="likeNum != null">
+                like_num=#{likeNum},
+            </if>
+            <if test="hateNum != null">
+                hate_num=#{hateNum},
+            </if>
+            <if test="status != null">
+                status=#{status},
+            </if>
+        </set>
+        <include refid="Base_Where_Clause"/>
+    </update>
+</mapper>
